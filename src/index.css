@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: #f8fafc;
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Table Styling overrides */
+.custom-student-table .ant-table-thead > tr > th {
+  background-color: #f1f5f9 !important;
+  color: #475569 !important;
+  font-weight: 700 !important;
+  font-size: 13px !important;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #e2e8f0 !important;
+  padding: 16px 20px !important;
+}
+
+.custom-student-table .ant-table-tbody > tr > td {
+  padding: 16px 20px !important;
+  border-bottom: 1px solid #f1f5f9 !important;
+  transition: background 0.2s ease;
+}
+
+.custom-student-table .ant-table-tbody > tr:hover > td {
+  background-color: #f8fafc !important;
+}
+
+/* Table Pagination styling */
+.custom-student-table .ant-pagination {
+  margin: 20px 24px !important;
+}
+
+/* Card hover animations */
+.ant-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ant-card:hover {
+  transform: translateY(-2px);
+}
